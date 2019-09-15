@@ -1,0 +1,9 @@
+name: BubbaxCome
+description: Private bubbax plugin
+main: bubbax.welcome.message.Main.Main
+depend: [ProtocolLib]
+version: Alpha 0.1
+authors:
+  - KarmatiKuade
+  - KarmaConfigs
+  - BubbaxBalloons
