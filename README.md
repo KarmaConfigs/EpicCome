@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to EpicCome
 
 EpicCome plugin is a plugin in where you can personalize join messages, and other perks on your server, this plugin also has some security options and skin-related options
 
