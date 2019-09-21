@@ -4,13 +4,13 @@ EpicCome plugin is a plugin in where you can personalize join messages, and othe
 
 ## Commands
 
-/ecome help - Shows help page 1
-/ecome help 2 - Shows help page 2
-/ecome setspawn - Set spawn at your location
-/ecome delspawn - Remove spawn
-/ecome spawn - Teleports to spawn location
-/ecome setskin <skin> - Set your skin
-/ecome setskin <player> <skin> - Set a player's skin
+- /ecome help - Shows help page 1
+- /ecome help 2 - Shows help page 2
+- /ecome setspawn - Set spawn at your location
+- /ecome delspawn - Remove spawn
+- /ecome spawn - Teleports to spawn location
+- /ecome setskin <skin> - Set your skin
+- /ecome setskin <player> <skin> - Set a player's skin
   
 ### Permissions:
 
