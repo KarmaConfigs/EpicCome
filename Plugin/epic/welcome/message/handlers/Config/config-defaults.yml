@@ -1,0 +1,54 @@
+SendCommandFeedback: true
+AdminCommandFeedback: true
+JoinSpawn: true
+Title: true
+TitlePublic: false
+VipTitlePublic: true
+StaffTitlePublic: false
+CustomJoin: true
+CustomLeave: true
+FixSkins: true
+EnableSkinsPerms: false
+DefaultSkin: Steve
+Motd: true
+OpProtect: false
+HumanVerify: true
+IpProtect: true
+IpPunishType: kick
+JoinLighting: true
+ForceLighting: Staff
+UsePlayerPermAsLighting: false
+UseVipPermAsLighting: false
+UseStaffPermAsLighting: false
+JoinExplosion: true
+ForceExplosion: Staff
+UsePlayerPermAsExplosion: false
+UseVipPermAsExplosion: false
+UseStaffPermAsExplosion: false
+EnderDragonEffects: false
+FireWorks: true
+FireWorksTrail: true
+FireWorksPower: 2
+FireWorkAmmount: 1
+FireWorkDetonateAfter: 3
+Permissions:
+  User: welcome.user
+  Lighting: welcome.lighting
+  Explosion: welcome.explosion
+  Firework: welcome.firework
+  DragonEffect: welcome.dragon
+  Skin: welcome.skin
+  Vip: welcome.vip
+  Staff: welcome.staff
+  Op: wstaff.op
+  OpWarn: wstaff.opwarn
+  Commands:
+    ReloadFull: wstaff.reload
+    ReloadConfig: wstaff.reload.config
+    ReloadMessages: wstaff.reload.messages
+    PageOfHelp: welcome.help
+    SetSpawn: welcome.staff.setspawn
+    DelSpawn: welcome.staff.delspawn
+    GoToSpawn: welcome.spawn
+    SetSkin: welcome.staff.setskin
+    SetSelfSkin: welcome.setskin

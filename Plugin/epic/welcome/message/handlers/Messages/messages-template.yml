@@ -1,0 +1,144 @@
+##########################
+#                        #
+#       BubbaxCome       #
+#                        #
+##########################
+
+#For detailed help, visit:https://github.com/KarmaConfigs/EpicCome/wiki
+
+########################
+
+#Message sent to player when he types /ecome reload
+reload: "[%reload%]"
+
+#Message sent to player when he types /ecome reload config
+reloadconfig: "[%reloadconfig%]"
+
+#Message sent to player when he types /ecome reload message
+reloadmessage: "[%reloadmessage%]"
+
+#Modify prefix for player messages
+#Leave empty (prefix: "") for default
+#(ADD SPACE NEXT TO THE PREFIX)
+#Example: prefix: "&aYourSv &b> "
+#If don't leave a space, the message will be:
+#YourSv >Config reloaded
+prefix: "[%prefix%]"
+
+#Message sent when player types /ecome delspawn
+delspawn: "[%delspawn%]"
+
+#Message sent when player types /ecome delspawn but
+#can't remove spawn
+delspawnerror: "[%delspawnerror%]"
+
+#Message sent when player types /ecome setspawn or
+#/ecome delspawn but can't save spawn.yml
+spawnsave: "[%spawnsave%]"
+
+#Message sent when player types /ecome delspawn but
+#there's not any spawn set
+delspawnset: "[%delspawnset%]"
+
+#Message sent when player types /ecome setspawn, /ecome delspawn or /spawn and plugin
+#detects some invalid config
+spawnreset: "[%spawnreset%]"
+
+#Message sent when a player types /ecome spawn
+spawn: "[%spawn%]"
+
+#Message sent when player types /ecome setspawn
+setspawn: "[%setspawn%]"
+
+#Message sent when the spawn doesn't exists
+spawnotset: "[%spawnotset%]"
+
+#Message sent when player types /ecome setspawn but there's a spawn already set
+alreadyspawn: "[%alreadyspawn%]"
+
+#Message sent to an admin when he sets other player skin
+#Placeholders: {player} / {skin}
+SetSkin: "[%SetSkin%]"
+
+#Message sent to players when an admin changes his skin
+#or an admin changes himself skin
+#Placeholders: {skin}
+PlayerSkin: "[%PlayerSkin%]"
+
+#Message sent when the skin target isn't online or is invalid
+SetSkinUsage: "[%SetSkinUsage%]"
+
+#Message sent to an admin when he tries to change a player skin with
+#and the skin name isn't of premium player
+NoPremium: "[%NoPremium%]"
+
+#Modify help message
+help: "[%help%]"
+#Message sent to a player if he doesn't have permissions for some command
+noperms: "[%noperms%]"
+
+#Title when an user joins
+#Permission: No permission
+#Placeholders: {player} / {server} / {online} / {max}
+TitleMessage: "[%TitleMessage%]"
+#Subtitle of the title
+Subtitle: "[%Subtitle%]"
+
+#Title when a vips enters the server
+#Permission: bubbaxcome.vip
+#Placeholders: {vip}
+VipTitle: "[%VipTitle%]"
+VipSubtitle: "[%VipSubtitle%]"
+
+#Title when a staff enters the server
+#Permission: bubbaxcome.staff
+#Placeholders: {staff}
+StaffTitle: "[%StaffTitle%]"
+StaffSubtitle: "[%StaffSubtitle%]"
+
+#Public join and leave message (if is enabled)
+Join: "[%Join%]"
+Leave: "[%Leave%]"
+
+#Motd line separator between the first and the last line
+#By default, there'll be an space between, separator line
+#and MOTD message. If that's enough for you and you don't
+#want a line separator, leave this blank
+Separator: "[%Separator%]"
+#Motd when players join (if is enabled)
+Motd: "[%Motd%]"
+
+#News header on the message (News message is an "integrator" with MOTD)
+#that means, if MOTD is disabled, news won't be shown
+NewsTitle: "[%NewsTitle%]"
+
+#News (Leave blank to disable)
+#News integrates with the MOTD, that means if
+#MOTD is disabled, news won't be shown
+News: "[%News%]"
+
+#Message when a player joins and has Op without the permission bubbaxcome.op
+Kick: "[%Kick%]"
+
+#Message when a player gets kicked by joining from different IP and IpProtect is enabled
+#Leave IpPunish: "" to don't send any kick message
+#(IF IpPunish is blank won't show any message)
+#Placeholders:
+# {newline} - Adds a simple line
+# {doubleline} - Adds two lines
+IpPunish: "[%IpPunish%]"
+
+#Message when a player joins and HumanVerify is enabled
+#Leave IpKick: "" to don't send any kick message
+#(IF VerifyKick is blank will show a "* Dark red * Human verification" message)
+#Placeholders:
+# Same as IpKick
+VerifyKick: "[%VerifyKick%]"
+
+#Message when someone has op, and he doesn't have bubbaxcome.op while OpProtection is off
+#Permission (to see the message): bubbaxcome.opwarn
+OpProtectionOffWarning: "[%OpProtectionOffWarning%]"
+
+#Boss bar message when a player with "Explosion" permission joins and EnderDragonEffects is true
+#Placeholders: {player} / {online} / {max}
+DragonBarMessage: "[%DragonBarMessage%]"

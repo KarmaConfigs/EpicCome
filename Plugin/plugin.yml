@@ -1,7 +1,15 @@
 name: EpicCome
 description: EpicCome, manage your server join messages and special join perks
 main: epic.welcome.message.Main.Main
-version: Alpha 0.1
+version: 1.7
 authors:
   - KarmatiKuade
   - KarmaConfigs
+commands:
+  ecome:
+    description: Main command for EpicCome
+    aliases:
+      - ecm
+      - come
+      - epiccome
+      - epic

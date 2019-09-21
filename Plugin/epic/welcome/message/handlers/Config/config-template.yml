@@ -1,0 +1,188 @@
+##########################
+#                        #
+#       BubbaxCome       #
+#                        #
+##########################
+
+#For detailed help, visit:https://github.com/KarmaConfigs/EpicCome/wiki
+
+#Choose if "noperms" message should be sent to a player without permissions
+SendCommandFeedback: [%SendCommandFeedback%]
+
+#Choose if players who exec /ecome reload X and have permissions for it, should
+#receive the message of "Reload config..."
+AdminCommandFeedback: [%AdminCommandFeedback%]
+
+#Enable/Disable auto spawn on join
+#if there is not any spawn set, then,
+#anything will happen
+#Use /ecome setspawn to define spawn
+JoinSpawn: true
+
+########################
+#                      #
+#       Settings       #
+#                      #
+########################
+
+#Enable/Disable title on join // If Public is enabled, the title will be show to everyone, but if it is in false, the title, will be shown only to the player
+Title: [%Title%]
+
+#TitlePublic will make the title shown to all players
+#(This won't replace Staff and Vip titles)
+#Recomended only if you have a title like that one:
+#Title: "[+]"
+#Subtitle: "{player}"
+TitlePublic: [%TitlePublic%]
+VipTitlePublic: [%VipTitlePublic%]
+StaffTitlePublic: [%StaffTitlePublic%]
+
+#Enable/Disable custom join or leave messages
+CustomJoin: [%CustomJoin%]
+CustomLeave: [%CustomLeave%]
+
+###############################
+#                             #
+#       Skins - Related       #
+#                             #
+###############################
+
+#Enable/Disable the skins fix on join
+FixSkins: [%FixSkins%]
+
+#Enable/Disable the need of permissions to auto-fix skins
+EnableSkinsPerms: [%EnableSkinsPerms%]
+
+#Default skin (Will always set this skin, even if FixSkins is
+#disabled, but this skin will set only to players without premium)
+#Leave blank to disable (DefaultSkin: "")
+DefaultSkin: "[%DefaultSkin%]"
+
+#Enable/Disable motd (News will be shown always, if there's something on it)
+Motd: [%Motd%]
+
+##########################
+#                        #
+#       Protection       #
+#                        #
+##########################
+
+#Enable/Disable op permission
+OpProtect: [%OpProtect%]
+
+#Enable/Disable humman verification
+HumanVerify: [%HumanVerify%]
+
+#Enable/Disable Ip protection
+IpProtect: [%IpProtect%]
+
+#Manage the punishment type for IpProtect
+#Types: kick / ban
+IpPunishType: [%IpPunishType%]
+
+#######################
+#                     #
+#      Lightning      #
+#                     #
+#######################
+
+JoinLighting: [%JoinLighting%]
+
+#This will summon a strike to the Specified group permission even if JoinLighting is disabled (Leave blank to disable [""])
+#MUST BE PERMISSION NAME (User, Vip or Staff)
+#This will only affect the rank permission, that means if you put VIP, this will only for
+#users with Vip permission.
+ForceLighting: [%ForceLighting%]
+
+#Use user permission as lighting permission (Includes Vip and Staff)
+#Only works if JoinLighting is enabled
+UsePlayerPermAsLighting: [%UsePlayerPermAsLighting%]
+
+#Use vip permission as lighting permission (Includes staff)
+#Only works if JoinLighting is enabled
+UseVipPermAsLighting: [%UseVipPermAsLighting%]
+
+#Use staff permission as lighting permission (Only staff [Not includes vip])
+#Only works if JoinLighting is enabled
+UseStaffPermAsLighting: [%UseStaffPermAsLighting%]
+
+#######################
+#                     #
+#      Explosion      #
+#                     #
+#######################
+
+#Summon explosion (Don't grief) when a player join and has the "Explosion" permission
+JoinExplosion: [%JoinExplosion%]
+
+#This will summon a explosion to the Specified group permission even if JoinExplosion is disabled (Leave blank to disable [""])
+#MUST BE PERMISSION NAME (User, Vip or Staff)
+#This will only affect the rank permission, that means if you put VIP, this will only for
+#users with Vip permission.
+ForceExplosion: [%ForceExplosion%]
+
+#Use user permission as explosion permission (Includes Vip and Staff)
+#Only works if JoinLighting is enabled
+UsePlayerPermAsExplosion: [%UsePlayerPermAsExplosion%]
+
+#Use vip permission as explosion permission (Includes staff)
+#Only works if JoinLighting is enabled
+UseVipPermAsExplosion: [%UseVipPermAsExplosion%]
+
+#Use staff permission as explosion permission (Only staff [Not includes vip])
+#Only works if JoinLighting is enabled
+UseStaffPermAsExplosion: [%UseStaffPermAsExplosion%]
+
+#Play some EnderDragon effects on player join (Will apply directly to players with
+# "Explosion" permission)
+# IT SAYS "SOME" BECAUSE IT DOESN'T SHOW ALL ENDERDRAGON EFFECTS, NOT FOR 1.8 PLUGIN VERSION
+#I recommend keep disabled this due the low support that 1.8 servers has on bosses
+EnderDragonEffects: [%EnderDragonEffects%]
+
+#######################
+#                     #
+#      Fireworks      #
+#                     #
+#######################
+
+#Enable/Disable fireworks
+FireWorks: [%FireWorks%]
+
+#Set if firework(s) should have trail
+FireWorksTrail: [%FireWorksTrail%]
+
+#Set firework(s) power
+FireWorksPower: [%FireWorksPower%]
+
+#Set amount of fireworks that will spawn
+FireWorkAmmount: [%FireWorkAmmount%]
+
+#Detonate fireworks after:
+#In seconds
+FireWorkDetonateAfter: [%FireWorkDetonateAfter%]
+
+#######################
+#                     #
+#     Permissions     #
+#                     #
+#######################
+Permissions:
+  User: [%Permissions.User%]
+  Lighting: [%Permissions.Lighting%]
+  Explosion: [%Permissions.Explosion%]
+  Firework: [%Permissions.Firework%]
+  DragonEffect: [%Permissions.DragonEffect%]
+  Skin: [%Permissions.Skin%]
+  Vip: [%Permissions.Vip%]
+  Staff: [%Permissions.Staff%]
+  Op: [%Permissions.Op%]
+  OpWarn: [%Permissions.OpWarn%]
+  Commands:
+    ReloadFull: [%Permissions.Commands.ReloadFull%]
+    ReloadConfig: [%Permissions.Commands.ReloadConfig%]
+    ReloadMessages: [%Permissions.Commands.ReloadMessages%]
+    PageOfHelp: [%Permissions.Commands.PageOfHelp%]
+    SetSpawn: [%Permissions.Commands.SetSpawn%]
+    DelSpawn: [%Permissions.Commands.DelSpawn%]
+    GoToSpawn: [%Permissions.Commands.GoToSpawn%]
+    SetSkin: [%Permissions.Commands.SetSkin%]
