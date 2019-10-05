@@ -1,0 +1,35 @@
+Version: Alpha 0.1
+Title: true
+TitlePublic: false
+VipTitlePublic: true
+StaffTitlePublic: false
+CustomJoin: true
+CustomLeave: true
+FixSkins: true
+EnableSkinsPerms: false
+DefaultSkin: Steve
+Motd: true
+OpProtect: false
+HumanVerify: true
+IpProtect: true
+IpPunishType: kick
+JoinLighting: true
+ForceLighting: Staff
+UsePlayerPermAsLighting: false
+UseVipPermAsLighting: false
+UseStaffPermAsLighting: false
+JoinExplosion: true
+ForceExplosion: Staff
+UsePlayerPermAsExplosion: false
+UseVipPermAsExplosion: false
+UseStaffPermAsExplosion: false
+EnderDragonEffects: false
+Permissions:
+  User: welcome.user
+  Lighting: welcome.lighting
+  Explosion: welcome.explosion
+  Skin: welcome.skin
+  Vip: welcome.vip
+  Staff: welcome.staff
+  Op: welcome.op
+  OpWarn: welcome.opwarn

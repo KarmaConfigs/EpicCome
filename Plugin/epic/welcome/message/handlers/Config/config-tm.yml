@@ -1,23 +1,14 @@
 ##########################
 #                        #
-#        EpicCome        #
+#       BubbaxCome       #
 #                        #
 ##########################
 
 #For detailed help, visit:https://github.com/KarmaConfigs/EpicCome/wiki
 
-#Choose if "noperms" message should be sent to a player without permissions
-SendCommandFeedback: [%SendCommandFeedback%]
-
-#Choose if players who exec /ecome reload X and have permissions for it, should
-#receive the message of "Reload config..."
-AdminCommandFeedback: [%AdminCommandFeedback%]
-
-#Enable/Disable auto spawn on join
-#if there is not any spawn set, then,
-#anything will happen
-#Use /ecome setspawn to define spawn
-JoinSpawn: [%JoinSpawn%]
+#Please, don't change this if you don't want to lose ALL
+#your config
+Version: "[%Version%]"
 
 ########################
 #                      #
@@ -54,8 +45,7 @@ FixSkins: [%FixSkins%]
 EnableSkinsPerms: [%EnableSkinsPerms%]
 
 #Default skin (Will always set this skin, even if FixSkins is
-#disabled, but this skin will set only to players without premium)
-#Leave blank to disable (DefaultSkin: "")
+#disabled)
 DefaultSkin: "[%DefaultSkin%]"
 
 #Enable/Disable motd (News will be shown always, if there's something on it)
@@ -78,19 +68,7 @@ IpProtect: [%IpProtect%]
 
 #Manage the punishment type for IpProtect
 #Types: kick / ban
-IpPunishType: [%IpPunishType%]
-
-#Choose if EpicCome should manage Login and
-#register
-ManageLogin: [%ManageLogin%]
-
-#Choose how much time a player has to login
-#Min: 10
-MaxLogin: [%MaxLogin%]
-
-#Choose how much time a player has to register
-#Min: 15
-MaxRegister: [%MaxRegister%]
+IpPunishType: "[%IpPunishType%]"
 
 #######################
 #                     #
@@ -104,7 +82,7 @@ JoinLighting: [%JoinLighting%]
 #MUST BE PERMISSION NAME (User, Vip or Staff)
 #This will only affect the rank permission, that means if you put VIP, this will only for
 #users with Vip permission.
-ForceLighting: [%ForceLighting%]
+ForceLighting: "[%ForceLighting%]"
 
 #Use user permission as lighting permission (Includes Vip and Staff)
 #Only works if JoinLighting is enabled
@@ -131,7 +109,7 @@ JoinExplosion: [%JoinExplosion%]
 #MUST BE PERMISSION NAME (User, Vip or Staff)
 #This will only affect the rank permission, that means if you put VIP, this will only for
 #users with Vip permission.
-ForceExplosion: [%ForceExplosion%]
+ForceExplosion: "[%ForceExplosion%]"
 
 #Use user permission as explosion permission (Includes Vip and Staff)
 #Only works if JoinLighting is enabled
@@ -153,63 +131,15 @@ EnderDragonEffects: [%EnderDragonEffects%]
 
 #######################
 #                     #
-#      Fireworks      #
-#                     #
-#######################
-
-#Enable/Disable fireworks
-FireWorks: [%FireWorks%]
-
-#Set if firework(s) should have trail
-FireWorksTrail: [%FireWorksTrail%]
-
-#Set firework(s) power
-FireWorksPower: [%FireWorksPower%]
-
-#Set amount of fireworks that will spawn
-FireWorkAmmount: [%FireWorkAmmount%]
-
-#Detonate fireworks after:
-#In seconds
-FireWorkDetonateAfter: [%FireWorkDetonateAfter%]
-
-#######################
-#                     #
-#       Updates       #
-#                     #
-#######################
-
-#Enable/disabled auto updating the plugin
-AutoUpdates: [%AutoUpdates%]
-
-#Send changelog to server when an update is available
-UpdateChangeLog: [%UpdateChangeLog%]
-
-#######################
-#                     #
 #     Permissions     #
 #                     #
 #######################
 Permissions:
-  User: [%Permissions.User%]
-  Lighting: [%Permissions.Lighting%]
-  Explosion: [%Permissions.Explosion%]
-  Firework: [%Permissions.Firework%]
-  DragonEffect: [%Permissions.DragonEffect%]
-  Skin: [%Permissions.Skin%]
-  Vip: [%Permissions.Vip%]
-  Staff: [%Permissions.Staff%]
-  Op: [%Permissions.Op%]
-  OpWarn: [%Permissions.OpWarn%]
-  UpdateMsg: [%Permissions.UpdateMsg%]
-  Commands:
-    ReloadFull: [%Permissions.Commands.ReloadFull%]
-    ReloadConfig: [%Permissions.Commands.ReloadConfig%]
-    ReloadMessages: [%Permissions.Commands.ReloadMessages%]
-    PageOfHelp: [%Permissions.Commands.PageOfHelp%]
-    SetSpawn: [%Permissions.Commands.SetSpawn%]
-    DelSpawn: [%Permissions.Commands.DelSpawn%]
-    GoToSpawn: [%Permissions.Commands.GoToSpawn%]
-    SetSkin: [%Permissions.Commands.SetSkin%]
-    SetSelfSkin: [%Permissions.Commands.SetSelfSkin%]
-    Update: [%Permissions.Commands.Update%]
+  User: "[%User%]"
+  Lighting: "[%Lighting%]"
+  Explosion: "[%Explosion%]"
+  Skin: "[%Skin%]"
+  Vip: "[%Vip%]"
+  Staff: "[%Staff%]"
+  Op: "[%Op%]"
+  OpWarn: "[%OpWarn%]"

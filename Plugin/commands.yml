@@ -1,0 +1,10 @@
+enabled: true
+messageprefix: false
+prefix: "&bMyServer "
+commands:
+  console:
+    - say Modify this from commands.yml {player} {online} {server} {max}
+  player:
+    - ecome spawn
+  message:
+    - "&bModify this in EpicCome/commands.yml"

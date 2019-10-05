@@ -15,6 +15,9 @@ OpProtect: false
 HumanVerify: true
 IpProtect: true
 IpPunishType: kick
+ManageLogin: true
+MaxLogin: 30
+MaxRegister: 60
 JoinLighting: true
 ForceLighting: Staff
 UsePlayerPermAsLighting: false
@@ -31,6 +34,8 @@ FireWorksTrail: true
 FireWorksPower: 2
 FireWorkAmmount: 1
 FireWorkDetonateAfter: 3
+AutoUpdates: true
+UpdateChangeLog: true
 Permissions:
   User: welcome.user
   Lighting: welcome.lighting
@@ -42,6 +47,8 @@ Permissions:
   Staff: welcome.staff
   Op: wstaff.op
   OpWarn: wstaff.opwarn
+  SilentJoin: wstaff.silent
+  UpdateMsg: wstaff.update.receive
   Commands:
     ReloadFull: wstaff.reload
     ReloadConfig: wstaff.reload.config
@@ -52,3 +59,4 @@ Permissions:
     GoToSpawn: welcome.spawn
     SetSkin: welcome.staff.setskin
     SetSelfSkin: welcome.setskin
+    Update: wstaff.update.execute

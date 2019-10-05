@@ -1,6 +1,6 @@
 ##########################
 #                        #
-#       BubbaxCome       #
+#        EpicCome        #
 #                        #
 ##########################
 
@@ -25,36 +25,120 @@ reloadmessage: "[%reloadmessage%]"
 #YourSv >Config reloaded
 prefix: "[%prefix%]"
 
-#Message sent when player types /ecome delspawn
-delspawn: "[%delspawn%]"
+#Server close message when an update is applied and
+#server is closed to apply it and make the plugin work
+#correctly
+ServerStopMessage: "[%ServerStopMessage%]"
 
-#Message sent when player types /ecome delspawn but
-#can't remove spawn
-delspawnerror: "[%delspawnerror%]"
+###################################
+#                                 #
+#                                 #
+#  EpicCome spawn system related  #
+#                                 #
+#                                 #
+###################################
+
+#Message sent when player types /ecome delspawn
+DelSpawn: "[%DelSpawn%]"
 
 #Message sent when player types /ecome setspawn or
 #/ecome delspawn but can't save spawn.yml
-spawnsave: "[%spawnsave%]"
-
-#Message sent when player types /ecome delspawn but
-#there's not any spawn set
-delspawnset: "[%delspawnset%]"
-
-#Message sent when player types /ecome setspawn, /ecome delspawn or /spawn and plugin
-#detects some invalid config
-spawnreset: "[%spawnreset%]"
-
-#Message sent when a player types /ecome spawn
-spawn: "[%spawn%]"
+ErrorSave: "[%ErrorSave%]"
 
 #Message sent when player types /ecome setspawn
-setspawn: "[%setspawn%]"
+SetSpawn: "[%SetSpawn%]"
+
+#Message sent when a player types /ecome spawn
+Spawn: "[%Spawn%]"
 
 #Message sent when the spawn doesn't exists
-spawnotset: "[%spawnotset%]"
+SpawnNotSet: "[%SpawnNotSet%]"
 
-#Message sent when player types /ecome setspawn but there's a spawn already set
-alreadyspawn: "[%alreadyspawn%]"
+###################################
+#                                 #
+#                                 #
+#  EpicCome login system related  #
+#                                 #
+#                                 #
+###################################
+
+#Message sent to the player when login system is disabled
+LogDisabled: "[%LogDisabled%]"
+
+#Message sent to the player when he is not registered
+Register: "[%Register%]"
+
+#Message sent to the player when he is not logged
+Login: "[%Login%]"
+
+#Message sent to the player when he tries to register an account
+#that's already registered
+AlreadyRegister: "[%AlreadyRegister%]"
+
+#Message sent to the player when he tries to login but he is
+#already logged-in
+AlreadyLogged: "[%AlreadyLogged%]"
+
+#Message sent to the player when he tries to login but he
+#is not registered
+NotRegistered: "[%NotRegistered%]"
+
+#Message sent when the password is incorrect
+IncorrectPassword: "[%IncorrectPassword%]"
+
+#Message sent to a player when he change his password
+PassChanged: "[%PassChanged%]"
+
+#Message sent to a player when he tries to change his
+#password, but its the same as old
+SamePassOld: "[%SamePassOld%]"
+
+#Message sent to a player when he removes his account
+Unregistered: "[%Unregistered%]"
+
+#Title sent to player when he needs to login
+#Placeholders: {time}
+LoginTitle: "[%LoginTitle%]"
+
+#Subtitle sent to player when he needs to login
+#Placeholders: {time}
+LoginSubtitle: "[%LoginSubtitle%]"
+
+#Title sent to player when he needs to register
+#Placeholders: {time}
+RegisterTitle: "[%RegisterTitle%]"
+
+#Subtitle sent to player when he needs to register
+#Placeholders: {time}
+RegisterSubtitle: "[%RegisterSubtitle%]"
+
+#Actionbar sent to player when he needs to login
+#Placeholders: {time}
+LoginActionbar: "[%LoginActionbar%]"
+
+#Actionbar sent to player when he needs to register
+#Placeholders: {time}
+RegisterActionbar: "[%RegisterActionbar%]"
+
+#Message sent to a player when he doesn't login
+LoginTimeout: "[%LoginTimeout%]"
+
+#Message sent to a player when he doesn't register
+RegisterTimeout: "[%RegisterTimeout%]"
+
+#Message sent to a player when he log-in
+Logged: "[%Logged%]"
+
+#Message sent to a player when he registers
+Registered: "[%Registered%]"
+
+###################################
+#                                 #
+#                                 #
+#  EpicCome skins system related  #
+#                                 #
+#                                 #
+###################################
 
 #Message sent to an admin when he sets other player skin
 #Placeholders: {player} / {skin}
@@ -72,6 +156,14 @@ SetSkinUsage: "[%SetSkinUsage%]"
 #and the skin name isn't of premium player
 NoPremium: "[%NoPremium%]"
 
+#############################
+#                           #
+#                           #
+#  EpicCome plugin related  #
+#                           #
+#                           #
+#############################
+
 #Modify help message
 help: "[%help%]"
 #Message sent to a player if he doesn't have permissions for some command
@@ -85,18 +177,17 @@ TitleMessage: "[%TitleMessage%]"
 Subtitle: "[%Subtitle%]"
 
 #Title when a vips enters the server
-#Permission: bubbaxcome.vip
 #Placeholders: {vip}
 VipTitle: "[%VipTitle%]"
 VipSubtitle: "[%VipSubtitle%]"
 
 #Title when a staff enters the server
-#Permission: bubbaxcome.staff
 #Placeholders: {staff}
 StaffTitle: "[%StaffTitle%]"
 StaffSubtitle: "[%StaffSubtitle%]"
 
 #Public join and leave message (if is enabled)
+#Placeholders: {player}
 Join: "[%Join%]"
 Leave: "[%Leave%]"
 
@@ -106,6 +197,7 @@ Leave: "[%Leave%]"
 #want a line separator, leave this blank
 Separator: "[%Separator%]"
 #Motd when players join (if is enabled)
+#Placeholders: {player} / {server} / {online} / {max}
 Motd: "[%Motd%]"
 
 #News header on the message (News message is an "integrator" with MOTD)
@@ -117,7 +209,7 @@ NewsTitle: "[%NewsTitle%]"
 #MOTD is disabled, news won't be shown
 News: "[%News%]"
 
-#Message when a player joins and has Op without the permission bubbaxcome.op
+#Message when a player joins and has Op without the Op permission
 Kick: "[%Kick%]"
 
 #Message when a player gets kicked by joining from different IP and IpProtect is enabled
@@ -135,10 +227,10 @@ IpPunish: "[%IpPunish%]"
 # Same as IpKick
 VerifyKick: "[%VerifyKick%]"
 
-#Message when someone has op, and he doesn't have bubbaxcome.op while OpProtection is off
-#Permission (to see the message): bubbaxcome.opwarn
+#Message when someone has op, and he doesn't have Op permission while OpProtection is off
+#Placeholders: {player}
 OpProtectionOffWarning: "[%OpProtectionOffWarning%]"
 
 #Boss bar message when a player with "Explosion" permission joins and EnderDragonEffects is true
-#Placeholders: {player} / {online} / {max}
+#Placeholders: {player} / {online} / {max} / {server}
 DragonBarMessage: "[%DragonBarMessage%]"
