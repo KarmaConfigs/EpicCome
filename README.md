@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to EpicCome
 
 EpicCome plugin is a plugin in where you can personalize join messages, and other perks on your server, this plugin also has some security options and skin-related options
 
@@ -9,8 +9,8 @@ EpicCome plugin is a plugin in where you can personalize join messages, and othe
 - /ecome setspawn - Set spawn at your location
 - /ecome delspawn - Remove spawn
 - /ecome spawn - Teleports to spawn location
-- /ecome setskin <skin> - Set your skin
-- /ecome setskin <player> <skin> - Set a player's skin
+- /ecome setskin [skin] - Set your skin
+- /ecome setskin [player] [skin] - Set a player's skin
   
 ### Permissions:
 
